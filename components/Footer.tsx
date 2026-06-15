@@ -53,19 +53,23 @@ export default function Footer() {
           </h3>
           <ul className="mt-4 space-y-3 text-sm text-parchment/80">
             <li>{site.location}</li>
-            <li>
-              <a href={`mailto:${site.email}`} className="hover:text-gold-light">
-                {site.email}
-              </a>
-            </li>
-            <li>
-              <a
-                href={`tel:${site.phone.replace(/\s/g, "")}`}
-                className="hover:text-gold-light"
-              >
-                {site.phone}
-              </a>
-            </li>
+            {site.phones.map((phone) => (
+              <li key={phone}>
+                <a href={`tel:${phone}`} className="hover:text-gold-light">
+                  {phone}
+                </a>
+              </li>
+            ))}
+            {site.email && (
+              <li>
+                <a
+                  href={`mailto:${site.email}`}
+                  className="hover:text-gold-light"
+                >
+                  {site.email}
+                </a>
+              </li>
+            )}
           </ul>
         </div>
       </div>

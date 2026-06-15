@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { pillars, programs, site } from "@/lib/site";
+import { highlights, programs, site } from "@/lib/site";
 import { getSortedPosts } from "@/lib/posts";
 import { StarMotif, StarDivider } from "@/components/StarMotif";
 import PostCard from "@/components/PostCard";
@@ -27,8 +27,8 @@ export default function HomePage() {
               <StarMotif className="h-4 w-4" /> Warrake · Edo State, Nigeria
             </p>
             <h1 className="mt-5 font-display text-4xl font-semibold leading-[1.08] text-ink sm:text-5xl lg:text-6xl">
-              Knowledge that lifts a whole{" "}
-              <span className="text-forest">community</span>.
+              Rooted in the Qur&rsquo;an, building a{" "}
+              <span className="text-forest">whole generation</span>.
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink/75">
               {site.mission}
@@ -43,21 +43,21 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Pillars panel */}
+          {/* Approach panel */}
           <div className="animate-fade-up rounded-3xl border border-forest/10 bg-white/60 p-7 sm:p-9">
             <h2 className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-forest">
-              Our four pillars
+              How we begin
             </h2>
             <ul className="mt-6 space-y-5">
-              {pillars.map((pillar) => (
-                <li key={pillar.title} className="flex gap-4">
+              {highlights.map((item) => (
+                <li key={item.title} className="flex gap-4">
                   <StarMotif className="mt-1 h-5 w-5 shrink-0 text-gold" />
                   <div>
                     <p className="font-display text-base font-semibold text-ink">
-                      {pillar.title}
+                      {item.title}
                     </p>
                     <p className="mt-1 text-sm leading-relaxed text-ink/65">
-                      {pillar.body}
+                      {item.body}
                     </p>
                   </div>
                 </li>
@@ -67,44 +67,43 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ---------- Mission band ---------- */}
+      {/* ---------- Vision band ---------- */}
       <section className="bg-forest text-parchment">
         <div className="container-page py-16 text-center">
           <StarDivider className="text-gold-light" />
-          <p className="mx-auto mt-8 max-w-3xl font-display text-2xl font-medium leading-snug sm:text-3xl">
-            “Seek knowledge, and let it become service — for the family, the
-            neighbour, and the community.”
-          </p>
           <p className="mt-6 text-sm uppercase tracking-[0.2em] text-parchment/70">
-            The spirit of {site.shortName}
+            Our vision
+          </p>
+          <p className="mx-auto mt-5 max-w-3xl font-display text-2xl font-medium leading-snug sm:text-3xl">
+            {site.vision}
           </p>
         </div>
       </section>
 
-      {/* ---------- Programs preview ---------- */}
+      {/* ---------- Programmes preview ---------- */}
       <section className="container-page py-20">
         <div className="flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-end">
           <div>
             <p className="eyebrow">What we do</p>
             <h2 className="mt-3 font-display text-3xl font-semibold text-ink sm:text-4xl">
-              Programs built around real needs
+              Our key programmes
             </h2>
           </div>
           <Link
             href="/programs"
             className="text-sm font-semibold text-forest hover:text-forest-deep"
           >
-            View all programs →
+            View all programmes →
           </Link>
         </div>
 
-        <div className="mt-10 grid gap-6 sm:grid-cols-2">
-          {programs.slice(0, 4).map((program) => (
+        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {programs.map((program) => (
             <div
               key={program.title}
               className="rounded-2xl border border-forest/10 bg-white/50 p-7"
             >
-              <h3 className="font-display text-xl font-semibold text-ink">
+              <h3 className="font-display text-lg font-semibold text-ink">
                 {program.title}
               </h3>
               <p className="mt-3 text-sm leading-relaxed text-ink/70">
@@ -121,7 +120,7 @@ export default function HomePage() {
           <div className="container-page py-20">
             <div className="flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-end">
               <div>
-                <p className="eyebrow">From the field</p>
+                <p className="eyebrow">From the community</p>
                 <h2 className="mt-3 font-display text-3xl font-semibold text-ink sm:text-4xl">
                   Recent activities
                 </h2>
@@ -156,7 +155,8 @@ export default function HomePage() {
             </h2>
             <p className="mt-4 text-lg leading-relaxed text-parchment/80">
               Whether you give, volunteer, or partner with us, your support
-              keeps children in school and helps families stand on their own.
+              helps young people learn the Qur&rsquo;an, stay in school, and
+              build a self-reliant future.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <Link

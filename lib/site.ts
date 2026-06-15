@@ -1,86 +1,136 @@
 export const site = {
-  name: "Warrake Muslims Education & Empowerment Foundation",
+  name: "Warrake Muslims Education and Empowerment Foundation",
   shortName: "WMEEF",
   tagline: "Education & Empowerment Foundation",
-  // TODO: update these with the foundation's real details
-  email: "info@wmeef.org",
-  phone: "+234 800 000 0000",
+  // No public email was provided. Add one here and it will appear on the site.
+  email: "",
+  // Official enquiry lines
+  phones: ["07037057020", "08148144816", "08054945530", "08073743669"],
   location: "Warrake, Owan East, Edo State, Nigeria",
   socials: {
     facebook: "#",
     instagram: "#",
     twitter: "#",
   },
+  vision:
+    "To raise a generation of Warrake youths grounded in Islamic values, equipped with sound education and employable skills, and prepared to lead with integrity.",
   mission:
-    "Advancing access to quality education and sustainable empowerment for Muslim communities in Warrake and beyond, rooted in knowledge, dignity, and service.",
+    "To use Quranic education as the foundation and incentive for holistic empowerment — spiritual, educational, and economic — for children, youths, and vulnerable members of the Warrake community.",
+  registration:
+    "Formally registered with the Corporate Affairs Commission (CAC) on 20 January 2026.",
 };
 
 export const navLinks = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
-  { href: "/programs", label: "Programs" },
+  { href: "/programs", label: "Programmes" },
   { href: "/blog", label: "Activities" },
   { href: "/contact", label: "Contact" },
 ];
 
-export const pillars = [
+export const leadership = [
+  { name: "Comrade Abdulwahab Ekekhide", role: "President" },
+  { name: "Abdullateef Suleiman", role: "Secretary General" },
+];
+
+// Short highlights for the home page panel
+export const highlights = [
+  {
+    title: "The Qur'an first",
+    body: "Quranic learning is the entry point and the incentive for every form of support we offer.",
+  },
   {
     title: "Education",
-    body: "Scholarships, learning materials, and tutoring that keep children and young people in school and help them thrive.",
+    body: "Scholarships for Islamic and conventional education, Quranic learning, and Hadith.",
   },
   {
-    title: "Empowerment",
-    body: "Skills training, mentorship, and small-business support that help families build durable, independent livelihoods.",
+    title: "Skills & self-reliance",
+    body: "Vocational training that helps young people earn a living and stand on their own.",
   },
   {
-    title: "Community",
-    body: "Health drives, welfare support, and gatherings that strengthen the bonds and wellbeing of the wider community.",
-  },
-  {
-    title: "Faith & Character",
-    body: "Programs that nurture knowledge, good character, and service grounded in Islamic values.",
+    title: "Care for the vulnerable",
+    body: "Support for the poor, orphans, and those in need across the community.",
   },
 ];
 
+// Aim & Objectives
+export const objectives = [
+  "Teach and instil Islamic principles, values, morals, and practices in daily life, emphasising faith, piety, and spiritual growth.",
+  "Make the learning of the Qur'an the foundation and incentive for support in conventional education and skills acquisition.",
+  "Provide scholarship support to educational programmes that promote Islamic studies, Quranic learning, and Hadith for children, youths, and adults.",
+  "Offer vocational training and skills development programmes to enable economic self-reliance.",
+  "Provide support and assistance to vulnerable members of the community, including the poor, orphans, and those in need.",
+  "Inculcate moral values such as honesty, compassion, and responsibility to build positive community contributors.",
+  "Identify and nurture future leaders, equipping them with the knowledge, skills, and character to positively impact the community.",
+  "Facilitate the return of Warrake as a hub for Quranic learning and Islamic education through partnership and collaboration.",
+];
+
+// Key Programmes
 export const programs = [
   {
-    title: "Scholarship Fund",
+    title: "Quranic Learning Foundation",
     summary:
-      "Tuition support and learning materials for promising students from low-income households, from primary school through tertiary level.",
+      "Quranic education is the entry point for all our empowerment efforts — the root that anchors character and opens the door to every other form of support.",
     points: [
-      "Annual tuition grants",
-      "Books, uniforms, and stationery",
-      "Mentorship from past beneficiaries",
+      "The starting point for every beneficiary",
+      "Builds character and spiritual grounding",
+      "The incentive that connects to education and skills",
     ],
   },
   {
-    title: "Skills & Vocational Training",
+    title: "Education Scholarships",
     summary:
-      "Hands-on training in trades and digital skills, paired with starter support so graduates can earn from day one.",
+      "Scholarship support for both Islamic and conventional education — including Quranic learning and Hadith — for children, youths, and adults.",
     points: [
-      "Tailoring, catering, and crafts",
-      "Computer and digital literacy",
-      "Starter tools and seed grants",
+      "Islamic and conventional education",
+      "Quranic learning and Hadith",
+      "Open to children, youths, and adults",
     ],
   },
   {
-    title: "Women's Empowerment",
+    title: "Vocational Training & Skills Acquisition",
     summary:
-      "Cooperative savings, micro-grants, and business mentoring that help women launch and grow small enterprises.",
+      "Practical training and skills development that enable beneficiaries to achieve economic self-reliance.",
     points: [
-      "Cooperative savings groups",
-      "Micro-grants for small businesses",
-      "Financial literacy workshops",
+      "Hands-on, employable skills",
+      "A path to economic self-reliance",
     ],
   },
   {
-    title: "Community Welfare",
+    title: "Support for Vulnerable Members",
     summary:
-      "Seasonal relief, health outreach, and support for vulnerable families across the community.",
-    points: [
-      "Ramadan and Eid food distribution",
-      "Free health screening days",
-      "Support for orphans and widows",
-    ],
+      "Assistance for the most vulnerable in the community — the poor, orphans, and those in need.",
+    points: ["Support for the poor and those in need", "Care for orphans"],
+  },
+  {
+    title: "Leadership Development",
+    summary:
+      "Identifying and nurturing future leaders, equipping them with the knowledge, character, and skills to serve the community.",
+    points: ["Mentoring future leaders", "Knowledge, character, and skill"],
+  },
+  {
+    title: "Moral & Character Building",
+    summary:
+      "Teaching Islamic principles and values — honesty, compassion, and responsibility — to build positive, community-minded contributors.",
+    points: ["Faith, piety, and good character", "Honesty, compassion, responsibility"],
+  },
+];
+
+// Key Achievements so far
+export const achievements = [
+  {
+    date: "20 January 2026",
+    title: "Registered with the CAC",
+    body: "WMEEF was formally registered with the Corporate Affairs Commission, establishing it as a recognised nonprofit organisation.",
+  },
+  {
+    date: "2026",
+    title: "Scholarships for 4 pupils",
+    body: "Full scholarships were awarded to four pupils at Attaoheed College of Science and Arabic Studies, Warrake.",
+  },
+  {
+    date: "30 May 2026",
+    title: "1st Warrake Islamic Education Summit",
+    body: "Successfully held at Warrake Central Mosque to mobilise stakeholders around Quranic and moral education.",
   },
 ];

@@ -26,7 +26,7 @@ const ways = [
   {
     title: "Mobile / online",
     body: "Send via your preferred mobile transfer or payment platform, then let us know so we can acknowledge your gift.",
-    lines: [`Email proof to ${site.email}`],
+    lines: [`Call to confirm: ${site.phones[0]}`],
   },
   {
     title: "Give in kind",

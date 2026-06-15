@@ -2,29 +2,29 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import PageHeader from "@/components/PageHeader";
 import { StarMotif, StarDivider } from "@/components/StarMotif";
-import { pillars, site } from "@/lib/site";
+import { objectives, achievements, leadership, site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "About",
-  description: `Learn about ${site.name} — our story, vision, and the values that guide our work.`,
+  description: `About ${site.name} — our story, vision, mission, and objectives.`,
 };
 
 const values = [
   {
-    title: "Knowledge",
-    body: "We believe learning is the surest path out of poverty and the foundation of a dignified life.",
+    title: "Faith & piety",
+    body: "Spiritual growth grounded in the Qur'an sits at the centre of everything we do.",
   },
   {
-    title: "Dignity",
-    body: "We serve every person with respect, protecting the dignity of those we support.",
+    title: "Honesty",
+    body: "We act with truthfulness and remain accountable to the community we serve.",
   },
   {
-    title: "Service",
-    body: "We measure success by lives improved, not by activity. Service is the point.",
+    title: "Compassion",
+    body: "We reach out to the vulnerable — the poor, orphans, and those in need.",
   },
   {
-    title: "Trust",
-    body: "We are accountable to our community and transparent about how every contribution is used.",
+    title: "Responsibility",
+    body: "We nurture character and a sense of duty in the leaders of tomorrow.",
   },
 ];
 
@@ -33,8 +33,8 @@ export default function AboutPage() {
     <>
       <PageHeader
         eyebrow="About the Foundation"
-        title="Rooted in Warrake, working for its future."
-        intro="The Warrake Muslims Education & Empowerment Foundation exists to open doors — to schooling, to skills, and to a self-reliant future — for the families of our community."
+        title="Rooted in Warrake, grounded in the Qur'an."
+        intro="The Warrake Muslims Education and Empowerment Foundation (WMEEF) is a community-based nonprofit working to renew Quranic learning and Islamic values, and to open doors to education and self-reliance for the people of Warrake."
       />
 
       {/* Story */}
@@ -48,22 +48,20 @@ export default function AboutPage() {
           </div>
           <div className="space-y-5 text-lg leading-relaxed text-ink/80">
             <p>
-              In Warrake and the villages around it, talent has never been in
-              short supply — but opportunity often is. Too many bright children
-              leave school early because of fees, and too many capable adults
-              lack the skills or starting capital to earn a steady living.
+              WMEEF was founded out of deep concern for moral decline in
+              Warrake and the wider society. It was established in response to a
+              falling interest in Quranic learning among children and youths — a
+              trend that has weakened the moral fabric and core Islamic values
+              of the community.
             </p>
             <p>
-              The Foundation was formed to change that. We bring together
-              members of the community, well-wishers, and partners to fund
-              education, build practical skills, and support families through
-              hard seasons — all grounded in Islamic values of knowledge,
-              charity, and service.
+              We believe that strong Islamic foundations, built on the
+              Qur&rsquo;an, are the bedrock of character, education, and
+              economic empowerment. By making Quranic learning the entry point,
+              the Foundation creates an incentive for beneficiaries to access
+              conventional education and skills-acquisition opportunities.
             </p>
-            <p>
-              Everything we do is organised around four pillars: education,
-              empowerment, community, and faith &amp; character.
-            </p>
+            <p>{site.registration}</p>
           </div>
         </div>
       </section>
@@ -76,8 +74,7 @@ export default function AboutPage() {
               Our vision
             </h2>
             <p className="mt-4 font-display text-2xl font-medium leading-snug">
-              A community where every child can learn and every family can
-              stand on its own.
+              {site.vision}
             </p>
           </div>
           <div>
@@ -91,53 +88,96 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Pillars */}
+      {/* Objectives */}
       <section className="container-page py-20">
         <div className="text-center">
-          <p className="eyebrow justify-center">How we work</p>
+          <p className="eyebrow justify-center">Aim &amp; objectives</p>
           <h2 className="mt-3 font-display text-3xl font-semibold text-ink sm:text-4xl">
-            Four pillars, one purpose
+            What we set out to do
           </h2>
         </div>
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {pillars.map((pillar, i) => (
-            <div
-              key={pillar.title}
-              className="rounded-2xl border border-forest/10 bg-white/50 p-6"
-            >
-              <div className="flex items-center gap-3">
-                <span className="font-display text-2xl font-semibold text-gold">
-                  {String(i + 1).padStart(2, "0")}
-                </span>
-                <StarMotif className="h-5 w-5 text-forest" />
+        <ol className="mx-auto mt-12 grid max-w-5xl gap-x-10 gap-y-8 sm:grid-cols-2">
+          {objectives.map((objective, i) => (
+            <li key={i} className="flex gap-4">
+              <span className="font-display text-2xl font-semibold text-gold">
+                {String(i + 1).padStart(2, "0")}
+              </span>
+              <p className="leading-relaxed text-ink/80">{objective}</p>
+            </li>
+          ))}
+        </ol>
+      </section>
+
+      {/* Achievements */}
+      <section className="bg-sand/50">
+        <div className="container-page py-20">
+          <div className="text-center">
+            <p className="eyebrow justify-center">Milestones so far</p>
+            <h2 className="mt-3 font-display text-3xl font-semibold text-ink sm:text-4xl">
+              Key achievements
+            </h2>
+          </div>
+          <div className="mt-12 grid gap-6 md:grid-cols-3">
+            {achievements.map((item) => (
+              <div
+                key={item.title}
+                className="rounded-2xl border border-forest/10 bg-white/60 p-7"
+              >
+                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-gold">
+                  {item.date}
+                </p>
+                <h3 className="mt-3 font-display text-xl font-semibold text-ink">
+                  {item.title}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-ink/70">
+                  {item.body}
+                </p>
               </div>
-              <h3 className="mt-4 font-display text-lg font-semibold text-ink">
-                {pillar.title}
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Values */}
+      <section className="container-page py-20">
+        <StarDivider />
+        <h2 className="mt-8 text-center font-display text-3xl font-semibold text-ink sm:text-4xl">
+          The values that guide us
+        </h2>
+        <div className="mx-auto mt-12 grid max-w-4xl gap-x-12 gap-y-10 sm:grid-cols-2">
+          {values.map((value) => (
+            <div key={value.title}>
+              <h3 className="font-display text-xl font-semibold text-forest">
+                {value.title}
               </h3>
-              <p className="mt-2 text-sm leading-relaxed text-ink/70">
-                {pillar.body}
-              </p>
+              <p className="mt-2 leading-relaxed text-ink/75">{value.body}</p>
             </div>
           ))}
         </div>
       </section>
 
-      {/* Values */}
-      <section className="bg-sand/50">
-        <div className="container-page py-20">
-          <StarDivider />
-          <h2 className="mt-8 text-center font-display text-3xl font-semibold text-ink sm:text-4xl">
-            The values that guide us
-          </h2>
-          <div className="mx-auto mt-12 grid max-w-4xl gap-x-12 gap-y-10 sm:grid-cols-2">
-            {values.map((value) => (
-              <div key={value.title}>
-                <h3 className="font-display text-xl font-semibold text-forest">
-                  {value.title}
-                </h3>
-                <p className="mt-2 leading-relaxed text-ink/75">
-                  {value.body}
+      {/* Leadership */}
+      <section className="bg-forest-deep text-parchment">
+        <div className="container-page py-16">
+          <div className="text-center">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold-light">
+              Leadership
+            </p>
+            <h2 className="mt-3 font-display text-3xl font-semibold sm:text-4xl">
+              Those who serve
+            </h2>
+          </div>
+          <div className="mx-auto mt-10 flex max-w-2xl flex-col justify-center gap-6 sm:flex-row">
+            {leadership.map((person) => (
+              <div
+                key={person.name}
+                className="flex-1 rounded-2xl border border-parchment/15 bg-parchment/5 p-6 text-center"
+              >
+                <StarMotif className="mx-auto h-7 w-7 text-gold-light" />
+                <p className="mt-4 font-display text-lg font-semibold">
+                  {person.name}
                 </p>
+                <p className="mt-1 text-sm text-parchment/70">{person.role}</p>
               </div>
             ))}
           </div>

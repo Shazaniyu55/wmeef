@@ -5,17 +5,17 @@ import { StarMotif } from "@/components/StarMotif";
 import { programs, site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Programs",
-  description: `The programs through which ${site.shortName} delivers education and empowerment.`,
+  title: "Programmes",
+  description: `The key programmes through which ${site.shortName} delivers Quranic learning, education, and empowerment.`,
 };
 
 export default function ProgramsPage() {
   return (
     <>
       <PageHeader
-        eyebrow="Our Programs"
-        title="Practical programs, lasting change."
-        intro="Each program targets a specific barrier — cost, skills, capital, or hardship — and pairs support with the follow-through that makes it stick."
+        eyebrow="Our Programmes"
+        title="Quranic learning, and the doors it opens."
+        intro="Quranic education is our starting point and our incentive. From there, our programmes extend into scholarships, skills, welfare, leadership, and character."
       />
 
       <section className="container-page py-20">
