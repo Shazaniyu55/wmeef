@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import {
   getAllPostSlugs,
@@ -9,6 +10,7 @@ import {
 } from "@/lib/posts";
 import { StarDivider } from "@/components/StarMotif";
 import PostCard from "@/components/PostCard";
+import ActivityGallery from "@/components/ActivityGallery";
 
 type Params = { params: { slug: string } };
 
@@ -24,7 +26,11 @@ export async function generateMetadata({
   return {
     title: post.title,
     description: post.excerpt,
-    openGraph: { title: post.title, description: post.excerpt },
+    openGraph: {
+      title: post.title,
+      description: post.excerpt,
+      images: post.cover ? [post.cover] : undefined,
+    },
   };
 }
 
@@ -62,12 +68,27 @@ export default async function PostPage({ params }: Params) {
           {post.title}
         </h1>
 
+        {post.cover && (
+          <div className="relative mt-8 aspect-[3/2] overflow-hidden rounded-2xl bg-sand">
+            <Image
+              src={post.cover}
+              alt={post.title}
+              fill
+              priority
+              sizes="(max-width: 768px) 100vw, 768px"
+              className="object-cover"
+            />
+          </div>
+        )}
+
         <StarDivider className="mt-10" />
 
         <div
           className="prose-article mt-8"
           dangerouslySetInnerHTML={{ __html: post.contentHtml }}
         />
+
+        <ActivityGallery images={post.gallery} title={post.title} />
       </article>
 
       {related.length > 0 && (

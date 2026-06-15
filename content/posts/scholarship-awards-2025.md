@@ -4,6 +4,15 @@ date: "2025-09-14"
 category: "Education"
 location: "Warrake Central School"
 excerpt: "Forty-two students from across the community received tuition grants and learning materials at this year's scholarship ceremony."
+cover: "/activities/scholarship-cover.jpg"
+gallery:
+  - src: "/activities/scholarship-1.jpg"
+    caption: "Beneficiaries with their families at the ceremony"
+  - src: "/activities/scholarship-2.jpg"
+    caption: "Learning materials handed to each awardee"
+  - src: "/activities/scholarship-3.jpg"
+    caption: "Mentors meeting their new students" 
+
 ---
 
 This September, the Foundation welcomed families, teachers, and community elders to celebrate **42 students** receiving scholarship awards for the 2025 academic year.

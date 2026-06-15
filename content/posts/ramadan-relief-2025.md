@@ -4,6 +4,15 @@ date: "2025-03-28"
 category: "Community"
 location: "Warrake and surrounding villages"
 excerpt: "Our annual Ramadan food drive distributed staple packages to 300 households this year, with help from volunteers and local donors."
+cover: "/activities/ramadan-cover.jpg"
+gallery:
+  - src: "/activities/ramadan-1.jpg"
+    caption: "Packing staple food parcels"
+  - src: "/activities/ramadan-2.jpg"
+    caption: "Volunteers preparing for distribution"
+  - src: "/activities/ramadan-3.jpg"
+    caption: "Reaching households across the community" 
+
 ---
 
 During Ramadan this year, the Foundation distributed food packages to **300 households** across Warrake and nearby villages.

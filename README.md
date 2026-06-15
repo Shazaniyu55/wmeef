@@ -62,12 +62,34 @@ date: "2025-10-01"
 category: "Education"
 location: "Where it happened"
 excerpt: "One or two sentences shown in listings."
+cover: "/activities/my-update-cover.jpg"
+gallery:
+  - src: "/activities/my-update-1.jpg"
+    caption: "What's happening in this photo"
+  - src: "/activities/my-update-2.jpg"
+    caption: "Another moment"
 ---
 
 Your content here. Use **bold**, lists, ## headings, and > quotes.
 ```
 
-Posts are sorted newest-first automatically.
+Posts are sorted newest-first automatically. `cover` and `gallery` are
+optional — a post with neither simply shows no photos.
+
+## Adding photos
+
+1. Put your photo files in `public/activities/` (JPG, PNG, or WebP).
+2. Reference them from a post's frontmatter: `cover:` for the headline image
+   shown on cards and at the top of the post, and `gallery:` for the photo grid
+   at the bottom of the post (each opens in a click-to-enlarge lightbox).
+3. Paths always start with `/activities/...` (the `public` folder is the web
+   root).
+
+The site currently ships with **branded placeholder images** in
+`public/activities/` (they say "Replace with your photo"). Swap them for your
+real photos — keep the same filenames and nothing else needs to change, or use
+new filenames and update the frontmatter paths to match. A 3:2 ratio (e.g.
+1200×800) looks best. Compress large photos before uploading so pages stay fast.
 
 ## Brand
 

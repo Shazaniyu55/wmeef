@@ -6,6 +6,11 @@ import html from "remark-html";
 
 const postsDirectory = path.join(process.cwd(), "content", "posts");
 
+export type GalleryImage = {
+  src: string;
+  caption?: string;
+};
+
 export type PostMeta = {
   slug: string;
   title: string;
@@ -13,11 +18,28 @@ export type PostMeta = {
   excerpt: string;
   category: string;
   location?: string;
+  cover?: string;
 };
 
 export type Post = PostMeta & {
   contentHtml: string;
+  gallery: GalleryImage[];
 };
+
+/** Normalise frontmatter gallery entries (strings or {src, caption}). */
+function normalizeGallery(raw: unknown): GalleryImage[] {
+  if (!Array.isArray(raw)) return [];
+  return raw
+    .map((item): GalleryImage | null => {
+      if (typeof item === "string") return { src: item };
+      if (item && typeof item === "object" && "src" in item) {
+        const obj = item as { src: string; caption?: string };
+        return { src: obj.src, caption: obj.caption };
+      }
+      return null;
+    })
+    .filter((x): x is GalleryImage => x !== null);
+}
 
 function readPostFile(slug: string) {
   const fullPath = path.join(postsDirectory, `${slug}.md`);
@@ -44,6 +66,7 @@ export function getSortedPosts(): PostMeta[] {
         excerpt: data.excerpt ?? "",
         category: data.category ?? "Activity",
         location: data.location ?? "",
+        cover: data.cover ?? "",
       } satisfies PostMeta;
     })
     .sort((a, b) => (a.date < b.date ? 1 : -1));
@@ -60,6 +83,8 @@ export async function getPost(slug: string): Promise<Post | null> {
       excerpt: data.excerpt ?? "",
       category: data.category ?? "Activity",
       location: data.location ?? "",
+      cover: data.cover ?? "",
+      gallery: normalizeGallery(data.gallery),
       contentHtml: processed.toString(),
     };
   } catch {

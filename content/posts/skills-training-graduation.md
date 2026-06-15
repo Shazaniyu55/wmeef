@@ -4,6 +4,15 @@ date: "2025-07-02"
 category: "Empowerment"
 location: "WMEEF Training Hall"
 excerpt: "Twenty-eight graduates completed our tailoring, catering, and digital-literacy tracks — each leaving with the tools to start earning right away."
+cover: "/activities/skills-cover.jpg"
+gallery:
+  - src: "/activities/skills-1.jpg"
+    caption: "Practical work in the tailoring track"
+  - src: "/activities/skills-2.jpg"
+    caption: "The digital literacy class in session"
+  - src: "/activities/skills-3.jpg"
+    caption: "Graduates receiving their starter kits" 
+
 ---
 
 Our first vocational training cohort has graduated. Over four months, **28 participants** trained across three tracks: tailoring, catering, and digital literacy.
