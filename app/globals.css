@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: theme("colors.parchment");
+  color: theme("colors.ink");
+  font-family: theme("fontFamily.body");
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Visible keyboard focus everywhere */
+:focus-visible {
+  outline: 2px solid theme("colors.forest.DEFAULT");
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-content px-5 sm:px-8;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.22em] text-forest;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold transition-colors duration-200 focus-visible:outline-offset-4;
+  }
+  .btn-primary {
+    @apply btn bg-forest text-parchment hover:bg-forest-deep;
+  }
+  .btn-secondary {
+    @apply btn border border-forest/30 bg-transparent text-forest hover:border-forest hover:bg-forest/5;
+  }
+
+  /* Blog article typography */
+  .prose-article {
+    @apply text-[1.05rem] leading-relaxed text-ink/85;
+  }
+  .prose-article h2 {
+    @apply mt-10 mb-3 font-display text-2xl font-semibold text-ink;
+  }
+  .prose-article h3 {
+    @apply mt-8 mb-2 font-display text-xl font-semibold text-ink;
+  }
+  .prose-article p {
+    @apply mb-5;
+  }
+  .prose-article ul {
+    @apply mb-5 ml-5 list-disc space-y-2;
+  }
+  .prose-article ol {
+    @apply mb-5 ml-5 list-decimal space-y-2;
+  }
+  .prose-article a {
+    @apply text-forest underline underline-offset-2 hover:text-forest-deep;
+  }
+  .prose-article blockquote {
+    @apply my-6 border-l-4 border-gold/60 bg-sand/60 px-5 py-3 italic text-ink/80;
+  }
+  .prose-article strong {
+    @apply font-semibold text-ink;
+  }
+}
