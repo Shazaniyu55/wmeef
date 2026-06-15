@@ -32,12 +32,12 @@ export default function Navbar() {
           aria-label={`${site.shortName} home`}
         >
           <Image
-            src="/logo.png"
+            src="/logonew.png"
             alt={site.name}
-            width={150}
-            height={45}
+            width={250}
+            height={250}
             priority
-            className="h-11 w-auto"
+            className="h-20 w-auto"
           />
         </Link>
 
