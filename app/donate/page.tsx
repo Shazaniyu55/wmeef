@@ -21,7 +21,7 @@ const ways = [
     title: "Bank transfer",
     body: "Make a direct transfer to the Foundation's account.",
     // TODO: replace with the foundation's real bank details
-    lines: ["Bank: [Your Bank Name]", "Account name: WMEEF", "Account no: 0000000000"],
+    lines: ["Bank: Jaiz", "Account name: Warrake Muslims Education and Empowerment Foundation", "Account no: 0024845708"],
   },
   {
     title: "Mobile / online",
