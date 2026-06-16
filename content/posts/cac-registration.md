@@ -4,7 +4,7 @@ date: "2026-01-20"
 category: "Milestone"
 location: "Warrake, Edo State"
 excerpt: "The Foundation was formally registered with the Corporate Affairs Commission on 20 January 2026, becoming a recognised nonprofit organisation."
-cover: "/activities/cac-cover.jpg"
+cover: "/activities/wmeef13.jpeg"
 ---
 
 On **20 January 2026**, the Warrake Muslims Education and Empowerment Foundation was formally registered with the **Corporate Affairs Commission (CAC)**, becoming a recognised nonprofit organisation.

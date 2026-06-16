@@ -5,11 +5,13 @@ date: "2026-02-15"
 category: "Education"
 location: "Attaoheed College of Science and Arabic Studies, Warrake"
 excerpt: "WMEEF awarded full scholarships to four pupils at Attaoheed College of Science and Arabic Studies, Warrake."
-cover: "/activities/scholarships-cover.jpg"
+cover: "/activities/wmeef1.jpeg"
 gallery:
-  - src: "/activities/scholarships-1.jpg"
+  - src: "/activities/wmeef1.jpeg"
     caption: "Beneficiaries at Attaoheed College of Science and Arabic Studies"
-  - src: "/activities/scholarships-2.jpg"
+  - src: "/activities/wmeef11.png"
+    caption: "Scholarship presentation to the pupils"
+  - src: "/activities/wmeef9.jpeg"
     caption: "Scholarship presentation to the pupils"
 ---
 

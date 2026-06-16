@@ -11,6 +11,7 @@ import {
 import { StarDivider } from "@/components/StarMotif";
 import PostCard from "@/components/PostCard";
 import ActivityGallery from "@/components/ActivityGallery";
+import ActivityVideos from "@/components/ActivityVideos";
 
 type Params = { params: { slug: string } };
 
@@ -87,6 +88,8 @@ export default async function PostPage({ params }: Params) {
           className="prose-article mt-8"
           dangerouslySetInnerHTML={{ __html: post.contentHtml }}
         />
+
+        <ActivityVideos videos={post.videos} />
 
         <ActivityGallery images={post.gallery} title={post.title} />
       </article>

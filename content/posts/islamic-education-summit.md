@@ -4,13 +4,27 @@ date: "2026-05-30"
 category: "Event"
 location: "Warrake Central Mosque"
 excerpt: "On 30 May 2026, WMEEF successfully held the 1st Warrake Islamic Education Summit to mobilise stakeholders around Quranic and moral education."
-cover: "/activities/summit-cover.jpg"
+cover: "/activities/wmeef5.jpeg"
+videos:
+  # Self-hosted clip (a file in /public/activities). Replace with your own.
+  - src: "/activities/summit.mp4"
+    poster: "/activities/wmeef10.jpeg"
+    caption: "Summit video"
+  # To use YouTube or Vimeo instead, add the link like this (uncomment):
+  # - url: "https://www.youtube.com/watch?v=YOUR_VIDEO_ID"
+  #   caption: "Highlights from the summit"
 gallery:
-  - src: "/activities/summit-1.jpg"
+  - src: "/activities/wmeef8.jpeg"
     caption: "Stakeholders gathered at the summit"
-  - src: "/activities/summit-2.jpg"
+  - src: "/activities/wmeef4.jpeg"
     caption: "Addresses and discussions on Quranic education"
-  - src: "/activities/summit-3.jpg"
+  - src: "/activities/wmeef6.jpeg"
+    caption: "Community participation at Warrake Central Mosque"
+  - src: "/activities/wmeef7.jpeg"
+    caption: "Community participation at Warrake Central Mosque"
+  - src: "/activities/wmeef3.jpeg"
+    caption: "Community participation at Warrake Central Mosque"
+  - src: "/activities/wmeef2.jpeg"
     caption: "Community participation at Warrake Central Mosque"
 ---
 

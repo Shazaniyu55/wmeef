@@ -35,7 +35,7 @@ export default function Navbar() {
             src="/logonew.png"
             alt={site.name}
             width={250}
-            height={250}
+            height={145}
             priority
             className="h-20 w-auto"
           />
