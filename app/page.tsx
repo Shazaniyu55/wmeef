@@ -3,12 +3,21 @@ import { highlights, programs, site } from "@/lib/site";
 import { getSortedPosts } from "@/lib/posts";
 import { StarMotif, StarDivider } from "@/components/StarMotif";
 import PostCard from "@/components/PostCard";
+import IntroFlip from "@/components/IntroFlip";
 
 export default function HomePage() {
   const recentPosts = getSortedPosts().slice(0, 3);
 
   return (
     <>
+    <IntroFlip
+  activities={recentPosts.map((p) => ({
+    title: p.title,
+    cover: p.cover,
+    category: p.category,
+    date: p.date,
+  }))}
+/>
       {/* ---------- Hero ---------- */}
       <section className="relative overflow-hidden">
         {/* Geometric watermark — the signature motif */}
@@ -27,8 +36,8 @@ export default function HomePage() {
               <StarMotif className="h-4 w-4" /> Warrake · Edo State, Nigeria
             </p>
             <h1 className="mt-5 font-display text-4xl font-semibold leading-[1.08] text-ink sm:text-5xl lg:text-6xl">
-              Rooted in the Qur&rsquo;an, building a{" "}
-              <span className="text-forest">whole generation</span>.
+              <span className="text-forest">The Warrake Muslims Education and Empowerment Foundation</span> {" "}
+              
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink/75">
               {site.mission}
