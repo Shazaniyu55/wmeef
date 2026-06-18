@@ -4,7 +4,7 @@ date: "2026-05-30"
 category: "Event"
 location: "Warrake Central Mosque"
 excerpt: "On 30 May 2026, WMEEF successfully held the 1st Warrake Islamic Education Summit to mobilise stakeholders around Quranic and moral education."
-cover: "/activities/wmeef5.jpeg"
+cover: "/activities/wmeef13.jpeg"
 videos:
   # Self-hosted clip (a file in /public/activities). Replace with your own.
   - src: "/activities/summit.mp4"
