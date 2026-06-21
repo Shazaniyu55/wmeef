@@ -3,19 +3,19 @@ export const site = {
   shortName: "WMEEF",
   tagline: "Education & Empowerment Foundation",
   // No public email was provided. Add one here and it will appear on the site.
-  email: "",
+  email: "info@wmeefoundation.org",
   // Official enquiry lines
   phones: ["07037057020", "08148144816", "08054945530", "08073743669"],
   location: "Warrake, Owan East, Edo State, Nigeria",
   socials: {
-    facebook: "#",
-    instagram: "#",
-    twitter: "#",
+    facebook: "www.facebook.com",
+    instagram: "www.instagram.com",
+    twitter: "www.twitter.com",
   },
   vision:
     "To raise a generation of Warrake youths grounded in Islamic values, equipped with sound education and employable skills, and prepared to lead with integrity.",
   mission:
-    "To use Quranic education as the foundation and incentive for holistic empowerment — spiritual, educational, and economic — for children, youths, and vulnerable members of the Warrake community.",
+    "Is a community-based nonprofit organization founded out of  deep concern for moral decadence in Warrake and society. The Foundation was establish in response to the declining interest in Quarnic learning among children and youths in Warrake, a trend that has contributed to the erosion of morals and core islamic values in the community",
   registration:
     "Formally registered with the Corporate Affairs Commission (CAC) on 20 January 2026.",
 };
