@@ -5,17 +5,17 @@ export const site = {
   // No public email was provided. Add one here and it will appear on the site.
   email: "info@wmeefoundation.org",
   // Official enquiry lines
-  phones: ["07037057020", "08148144816", "08054945530", "08073743669"],
-  location: "Warrake, Owan East, Edo State, Nigeria",
+  phones: ["07037057020", "08148144816", "08054945530 ", "08073743669"],
+  location: "Warrake is a political ward in Owan East Local Government Area, Edo North Senatorial District of Edo State, Nigeria. ",
   socials: {
     facebook: "www.facebook.com",
     instagram: "www.instagram.com",
     twitter: "www.twitter.com",
   },
   vision:
-    "To raise a generation of Warrake youths grounded in Islamic values, equipped with sound education and employable skills, and prepared to lead with integrity.",
+    "To nurture a generation of Warrake youths grounded in Islamic morals/values, equipped with education and skills to lead with integrity.Our goal is to establish a full Islamic Institution in Warrake as a center for Quranic learning, Arabic, empowerment, and community development.",
   mission:
-    "Is a community-based nonprofit organization founded out of  deep concern for moral decadence in Warrake and society. The Foundation was establish in response to the declining interest in Quarnic learning among children and youths in Warrake, a trend that has contributed to the erosion of morals and core islamic values in the community",
+    "To use Quranic education as the foundation and incentive for holistic empowerment, spiritual, educational, and economic for children, youths, and vulnerable members of the Warrake community. ",
   registration:
     "Formally registered with the Corporate Affairs Commission (CAC) on 20 January 2026.",
 };
@@ -55,14 +55,14 @@ export const highlights = [
 
 // Aim & Objectives
 export const objectives = [
-  "Teach and instil Islamic principles, values, morals, and practices in daily life, emphasising faith, piety, and spiritual growth.",
-  "Make the learning of the Qur'an the foundation and incentive for support in conventional education and skills acquisition.",
-  "Provide scholarship support to educational programmes that promote Islamic studies, Quranic learning, and Hadith for children, youths, and adults.",
-  "Offer vocational training and skills development programmes to enable economic self-reliance.",
+  "To promote Islamic learning, moral development, and community empowerment in Warrake and beyond.",
+  "Teach and instill Islamic principles, values, and  practices in daily life, with emphasis on faith, piety, honesty, compassion, and responsibility to build positive community members.",
+
+  "Identify and nurture future leaders by equipping them with knowledge, skills, and character to positively impact the community.",
+  "Offer vocational training and skills development programs to enable self-reliance.",
   "Provide support and assistance to vulnerable members of the community, including the poor, orphans, and those in need.",
-  "Inculcate moral values such as honesty, compassion, and responsibility to build positive community contributors.",
-  "Identify and nurture future leaders, equipping them with the knowledge, skills, and character to positively impact the community.",
-  "Facilitate the return of Warrake as a hub for Quranic learning and Islamic education through partnership and collaboration.",
+  "Establish Warrake as a hub for Quranic, Arabic, and Islamic education by setting up an Islamic Institution and providing scholarship support for Islamic studies, Qur’an, and Hadith for children, youths, and adults.",
+
 ];
 
 // Key Programmes
@@ -70,7 +70,7 @@ export const programs = [
   {
     title: "Quranic Learning Foundation",
     summary:
-      "Quranic education is the entry point for all our empowerment efforts — the root that anchors character and opens the door to every other form of support.",
+      " Use Quranic education as the entry point for all empowerment efforts ",
     points: [
       "The starting point for every beneficiary",
       "Builds character and spiritual grounding",
@@ -80,7 +80,7 @@ export const programs = [
   {
     title: "Education Scholarships",
     summary:
-      "Scholarship support for both Islamic and conventional education — including Quranic learning and Hadith — for children, youths, and adults.",
+      "Support for Islamic and Conventional education, Quranic learning, and Hadith for children, youths, and adults",
     points: [
       "Islamic and conventional education",
       "Quranic learning and Hadith",
@@ -88,9 +88,9 @@ export const programs = [
     ],
   },
   {
-    title: "Vocational Training & Skills Acquisition",
+    title: "Vocational Training & Skills Acquisition Programmes ",
     summary:
-      "Practical training and skills development that enable beneficiaries to achieve economic self-reliance.",
+      "To enable economic self-reliance.",
     points: [
       "Hands-on, employable skills",
       "A path to economic self-reliance",
@@ -99,19 +99,19 @@ export const programs = [
   {
     title: "Support for Vulnerable Members",
     summary:
-      "Assistance for the most vulnerable in the community — the poor, orphans, and those in need.",
+      "Assistance for the poor, orphans, and those in need. ",
     points: ["Support for the poor and those in need", "Care for orphans"],
   },
   {
     title: "Leadership Development",
     summary:
-      "Identifying and nurturing future leaders, equipping them with the knowledge, character, and skills to serve the community.",
+      "Identify and nurture future leaders with knowledge, character, and skills. ",
     points: ["Mentoring future leaders", "Knowledge, character, and skill"],
   },
   {
     title: "Moral & Character Building",
     summary:
-      "Teaching Islamic principles and values — honesty, compassion, and responsibility — to build positive, community-minded contributors.",
+      "Teach Islamic principles, values, honesty, compassion, and responsibility.",
     points: ["Faith, piety, and good character", "Honesty, compassion, responsibility"],
   },
 ];
@@ -120,17 +120,17 @@ export const programs = [
 export const achievements = [
   {
     date: "20 January 2026",
-    title: "Registered with the CAC",
-    body: "WMEEF was formally registered with the Corporate Affairs Commission, establishing it as a recognised nonprofit organisation.",
+    title: "CAC Registration",
+    body: "Formally registered with the Corporate Affairs Commission on 20th January, 2026. ",
   },
   {
     date: "2026",
-    title: "Scholarships for 4 pupils",
-    body: "Full scholarships were awarded to four pupils at Attaoheed College of Science and Arabic Studies, Warrake.",
+    title: " Education Scholarships Awarded",
+    body: "Full scholarships given to 4 pupils at Attaoheed College of Science and Arabic Studies, Warrake. ",
   },
   {
     date: "30 May 2026",
     title: "1st Warrake Islamic Education Summit",
-    body: "Successfully held at Warrake Central Mosque to mobilise stakeholders around Quranic and moral education.",
+    body: "Successfully organized on 30th May, 2026 at Warrake Central Mosque to mobilize stakeholders on Quranic + moral education. ",
   },
 ];

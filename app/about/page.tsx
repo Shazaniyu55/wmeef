@@ -6,25 +6,25 @@ import { objectives, achievements, leadership, site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "About",
-  description: `About ${site.name} — our story, vision, mission, and objectives.`,
+  description: `About ${site.name}  our story, vision, mission, and objectives.`,
 };
 
 const values = [
   {
     title: "Faith & piety",
-    body: "Spiritual growth grounded in the Qur'an sits at the centre of everything we do.",
+    body: "Teach and instill Islamic principles, values, and  practices in daily life, with emphasis on faith, piety, honesty, compassion, and responsibility to build positive community members",
   },
   {
     title: "Honesty",
-    body: "We act with truthfulness and remain accountable to the community we serve.",
+    body: "Identify and nurture future leaders by equipping them with knowledge, skills, and character to positively impact the community.",
   },
   {
-    title: "Compassion",
-    body: "We reach out to the vulnerable — the poor, orphans, and those in need.",
+    title: "Training",
+    body: "Offer vocational training and skills development programs to enable self-reliance..",
   },
   {
     title: "Responsibility",
-    body: "We nurture character and a sense of duty in the leaders of tomorrow.",
+    body: "Provide support and assistance to vulnerable members of the community, including the poor, orphans, and those in need.",
   },
 ];
 
@@ -33,8 +33,10 @@ export default function AboutPage() {
     <>
       <PageHeader
         eyebrow="About the Foundation"
-        title="Rooted in Warrake, grounded in the Qur'an."
-        intro="The Warrake Muslims Education and Empowerment Foundation (WMEEF) is a community-based nonprofit working to renew Quranic learning and Islamic values, and to open doors to education and self-reliance for the people of Warrake."
+        title="The Warrake Muslims Education and Empowerment Foundation"
+        intro="The Warrake Muslims Education and Empowerment Foundation, WMEEF, is a community-based non-profit organization. It was established in response to the declining interest in Quranic learning among children and youths in Warrake, a trend that has led to the erosion of morals and core Islamic values in the community.WMEEF believes that strong Islamic foundations, built on the Qur’an, are the bedrock for character, education, and economic empowerment. By making Quranic learning the entry point, the Foundation creates incentives for beneficiaries to access conventional education and skills acquisition opportunities. 
+
+WMEEF was formally registered with the Corporate Affairs Commission on 20th January, 2026. "
       />
 
       {/* Story */}
@@ -48,11 +50,7 @@ export default function AboutPage() {
           </div>
           <div className="space-y-5 text-lg leading-relaxed text-ink/80">
             <p>
-              WMEEF was founded out of deep concern for moral decline in
-              Warrake and the wider society. It was established in response to a
-              falling interest in Quranic learning among children and youths — a
-              trend that has weakened the moral fabric and core Islamic values
-              of the community.
+             To nurture a generation of Warrake youths grounded in Islamic morals/values, equipped with education and skills to lead with integrity.Our goal is to establish a full Islamic Institution in Warrake as a center for Quranic learning, Arabic, empowerment, and community development.
             </p>
             <p>
               We believe that strong Islamic foundations, built on the
