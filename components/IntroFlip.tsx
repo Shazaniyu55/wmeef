@@ -316,7 +316,7 @@ export default function IntroFlip({
       eyebrow: "About the Foundation",
       title: "The Warrake Muslims Education and Empowerment Foundation",
       body: site.mission,
-      meta: site.location,
+      // meta: site.location,
       image: "/logonew.png",
       imageKind: "logo",
     },
