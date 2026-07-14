@@ -23,6 +23,10 @@ export const metadata: Metadata = {
     template: `%s · ${site.shortName}`,
   },
   description: site.mission,
+    icons: {
+    icon: "/logonew.png",
+    apple: "/logonew.png",
+  },
   keywords: [
     "Warrake",
     "Muslim education",
