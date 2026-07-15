@@ -24,8 +24,9 @@ export const metadata: Metadata = {
   },
   description: site.mission,
     icons: {
-    icon: "/logonew.png",
-    apple: "/logonew.png",
+    icon: "/favicon.ico",
+    shortcut:"/favicon.ico",
+    apple: "/apple-touch-icon.png",
   },
   keywords: [
     "Warrake",
